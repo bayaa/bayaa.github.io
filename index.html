@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="estilo.css">
+  <meta charset="utf-8">
+  <title>Autos Robados</title>
+  
+  <div id="contenedor">
+    <div id="cabecera">
+      <img src="https://framework-gb.cdn.gob.mx/landing/img/clanding3.png" >
+      <h1 align="center">Alta, Baja de autos robados REPUV2.0</h1>
+    </div>
+      <div align="center">
+        <img src="https://images.pexels.com/photos/20258/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" height="200px" width="250px"/>
+        <img src="https://media.istockphoto.com/photos/car-thief-pulls-the-handle-of-a-car-picture-id521975426" height="200px" width="250px"/>
+        <img src="https://media.istockphoto.com/photos/hooded-thief-tries-to-break-the-cars-security-systems-with-laptop-picture-id1186083543" height="200px" width="250px"/>
+        <img src="https://cdn.pixabay.com/photo/2018/03/30/06/51/police-car-3274539_640.jpg" height="200px" width="250px"/>
+        <img src="https://cdn.pixabay.com/photo/2015/07/31/15/01/police-869216_960_720.jpg" height="200px" width="250px"/>
+        <img src="https://cdn.pixabay.com/photo/2016/01/19/17/57/car-1149997_960_720.jpg" height="200px" width="250px"/>
+        <img src="https://cdn.pixabay.com/photo/2015/06/01/19/57/bodyworn-794111_960_720.jpg" height="200px" width="250px"/>
+        <img src="https://cdn.pixabay.com/photo/2015/06/01/19/56/bodyworn-794099_960_720.jpg" height="200px" width="250px"/>
+        <img src="https://media.istockphoto.com/photos/policeman-wearing-bulletproof-vest-by-patrol-car-picture-id1199109881" height="200px" width="250px"/>
+        <img src="https://cdn.pixabay.com/photo/2016/02/19/11/26/squad-car-1209719_960_720.jpg" height="200px" width="250px"/>
+      </div>
+      
+    <div id="contenido">
+      <p align="right">Pagina para dar de alta un auto robado y verificar si tiene reporte de robo.</p>
+
+      <div id="boton">
+        <a href="http://localhost/PruebaMostrar/mostrar.php" target="_blank" >Ver Basedatos</a>
+
+
+      </div>
+
+      <div id="boton2">
+        <a href="http://laweb.com" target="_blank" >Registrar nuevo robo</a>
+
+      </div>
+      <div id="boton3">
+        <a href="http://laweb.com" target="_blank" >Robos de hoy</a>
+
+      </div>
+     
+
+      <table width="50%">
+        <tr>
+          <td>Buscar placa:</td>
+          <td> <input type="text" name="varPlaca"><br>
+          
+        </tr>
+        <tr>
+          <td>
+            <input type="submit" name="" value="ENVIAR">
+          </td>
+        </tr>
+      <!--Aqui va insertar datos-->
+      <h1 align="center">DAR DE ALTA A NUEVO AUTO ROBADO</h1>
+      <div class="form">
+        <form action="guardar.php" method="POST">
+          <p>ID_placa</p>
+          <label for="id_placa">Placa</label>
+          <input type="text" name="id_placa" placeholder="NN000" required>
+          <p>Fecha Reporte de Robo</p>
+          <label for="feche_reporte">Fecha Robo</label>
+          
+          <input type="text" name="feche_reporte" placeholder="00/00/0000" required>
+          
+          <p>Lugar de robo</p>
+          <label for="lugar_de_robo">Lugar de robo</label>
+          
+          <input type="text" name="lugar_de_robo" placeholder="Nombre propietario, Direccion,telefono,Lugar de robo" required>
+          <p>Estado</p>
+          <label for="estado">Estado</label>
+          
+          <input type="text" name="estado" placeholder="estado" required>
+  
+          <p>Marca</p>
+          <label for="marca">Marca</label>
+          
+          <input type="text" name="marca" placeholder="marca" required>
+          <p>Año</p>
+          <label for="anio">Año Carro</label>
+          
+          <input type="text" name="anio" placeholder="año" required>
+          <p>Color</p>
+          <label for="color">Color</label>
+          
+          <input type="text" name="color" placeholder="color" required>
+          <br>
+          <br>
+          
+          <input type="submit" value="Enviar">
+        </form>
+      </div>
+      <!--Finalizar insertar datos-->
+        <ul>
+          
+          <div align="center"><img src="https://i1.wp.com/www.transporte.mx/wp-content/uploads/2020/01/img_6395.jpg?w=770&ssl=1"></div>
+
+        </ul>
+      </table>
+    </div>
+    <div id="pie">
+      <p align="center">Pagina para uso exclusivo de la policia federal.</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/Logo_de_la_Polic%C3%ADa_Federal_de_M%C3%A9xico.png">
+    </div>
+  </div>
+</body>
+
+</html>
